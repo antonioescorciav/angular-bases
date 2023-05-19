@@ -3,27 +3,10 @@
 </h1>
 <hr>
 <div class="row">
-  <div  class="col">
-    <h4>Characters List</h4>
-    <ul class="list-group">
-      <li class="list-group-item">Krilin - 500</li>
-      <li class="list-group-item">Goku - 10.000</li>
-    </ul>
+  <div class="col">
+    <dbz-list [characterList]="characters"></dbz-list>
   </div>
   <div  class="col">
-    
-    <form class="row">
-      <h4>Add character</h4>
-
-      <input type="text" class="form-control mb-2" placeholder="name character">
-
-      <input type="number" class="form-control mb-2" placeholder="power">
-
-      <button type="submit" class="btn btn-primary">
-        Add
-      </button>
-
-    </form>
-
+    <dbz-add-character></dbz-add-character>
   </div>
 </div>
